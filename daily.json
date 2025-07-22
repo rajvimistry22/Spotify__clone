@@ -1,0 +1,30 @@
+{
+    "id": "3n3Ppam7vgaVa1iaRUc9Lp",
+    "name": "Take On Me",
+    "preview_url": "https://p.scdn.co/mp3-preview/a123b456c789d012e345f678g901h234567890i.mp3",
+    "album": {
+      "id": "1GbyZ4Is8nRKDG9KP4yY6O",
+      "name": "Hunting High and Low",
+      "images": [
+        {
+          "url": "https://i.scdn.co/image/ab67616d0000b273123456789abcdef123456789",
+          "height": 640,
+          "width": 640
+        }
+      ]
+    },
+    "artists": [
+      {
+        "id": "2wOqMjp9TyABvtHdOSOTUS",
+        "name": "a-ha",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2wOqMjp9TyABvtHdOSOTUS"
+        }
+      }
+    ],
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp"
+    },
+    "duration_ms": 225573
+  }
+  

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar1">
+        <div class="logo">
+            <i class="fa-brands fa-spotify"></i>
+        </div>
+        <div class="home">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+        
+        <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="searchInput" autocomplete="off" type="text" placeholder="What do you want to play?">
+            <div class="s1" style="position:relative">
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+        </div>
+        
+        <a href="auth.html">
+        <div class="profile">
+            <i class="fa fa-user"></i>
+        </div>
+        </a>
+
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <div class="main-content">
+            <br><br>
+            <div class="daily">
+                <!-- <div id="results"></div> -->
+                <div class="daily1">
+                    <a href="daily.html"><img src="images/pri.jpg" alt="Daily Mix"></a>
+                    <div class="play1">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h3>Daily Mix 1</h3>
+                </div>
+                <div class="daily1">
+                    <a href="darshan.html"><img src="images/darshan.jpg" alt="Daily Mix"></a>
+                    <div class="play1">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h3>Hits of Darshan Raval</h3>
+                </div>
+            </div>
+            <br><br>
+            <h2>Made For You</h2><br>
+            <div class="playlist">
+                <div class="card">
+                    <a href="guru.html"><img src="images/guruu.jpg" alt="Daily Mix 1"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p class="label">Daily Mix 01</p>
+                    <p>Guru Randhawa</p>                    
+                </div>
+                <div class="card">
+                    <a href="shreya.html"><img src="images/shreya.jpg" alt="Daily Mix 2"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p class="label">Daily Mix 02</p>
+                    <p>Shreya Ghoshal</p>
+                </div>
+                <div class="card">
+                    <a href="anuv.html"><img src="images/anuvv.jpg" alt="Daily Mix 3"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p class="label">Daily Mix 03</p>
+                    <p>Anuv Jain</p>
+                </div>
+                <div class="card">
+                    <a href="arijit.html"><img src="images/arijit.jpg" alt="Daily Mix 4"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <p class="label">Daily Mix 04</p>
+                    <p>Arijit Singh</p>
+                </div>
+            </div><br><br><br>
+
+            <div class="section-header">
+                <h2>Popular Album</h2>
+            </div> 
+            <div class="playlist">
+                    <div class="card">
+                        <a href="aashiqui.html"><img src="images/ash.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Aashiqui 2</h4>
+                        <p>Mithoon,Ankit Tiwari...</p>
+                    </div>
+                    <div class="card">
+                        <a href="sanam.html"><img src="images/sanam.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Sanam teri kasam</h4>
+                        <p>Himesh Reshamiya...</p>
+                    </div>
+                    <div class="card">
+                        <a href="mis.html"><img src="images/miss.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Mismatched</h4>
+                        <p>Mismatched-cast...</p>
+                    </div>
+                    <div class="card">
+                        <a href="jab.html"><img src="images/jab.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Jab We Met</h4>
+                        <p>Pritam,Irshad kamil...</p>
+                    </div>
+                    <div class="card">
+                        <a href="satranga.html"><img src="images/satranga.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Satranga</h4>
+                        <p>Lijo George, Nakash...</p>
+                    </div>      
+                </div>
+                
+            <br><br><br><br>
+            <div class="section-header">
+                <h2>Popular Artists</h2>
+                <div class="showall">
+                    <a href="artist.html"><h4>Show all</h4></a>
+                </div>
+            </div> 
+            <div class="playlist1">
+                
+                <div class="card1">
+                    <a href="arijit.html"><img src="images/arijit.jpg" alt="Artist 4"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Arijit Singh</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="card1">
+                    <a href="Shekhar.html"><img src="images/shekhar.jpg" alt="Artist 1"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Shekhar Ravjini</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="card1">
+                    <a href="kishore.html"><img src="images/kishore.jpg" alt="Artist 2"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Kishore kumar</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="card1">
+                    <a href="Vishal.html"><img src="images/vishal.jpg" alt="Artist 3"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Vishal Mishra</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="card1">
+                    <a href="Rahat.html"><img src="images/rahat.jpg" alt="Artist 4"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Rahat Fateh Ali Khan</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="card1">
+                    <a href="tulsi.html"><img src="images/tulsi.jpg" alt="Artist 4"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Tulsi Kumar</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="card1">
+                    <a href="shreya.html"><img src="images/shreya.jpg" alt="Artist 4"></a>
+                    <div class="play">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <h4>Shreya Ghoshal</h4>
+                    <p>Artist</p>
+                </div>
+            </div> 
+            <br><br><br><br>
+            <div class="section-header">
+                <h2>Popular Playlists</h2>
+                <!-- <div class="showall">
+                    <h4>Show all</h4>
+                </div> -->
+            </div> 
+            <div class="playlist">
+                    <div class="card">
+                        <a href="romantic.html"><img src="images/romantic.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Romantic Playlist</h4>
+                    </div>
+                    <div class="card">
+                        <a href="bollywood.html"><img src="images/bollywood.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Bollywood Playlist</h4>
+                    </div>
+                    <div class="card">
+                        <a href="wholesome.html"><img src="images/wholesome.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Wholesome songs</h4>
+                    </div>
+                    <div class="card">
+                        <a href="car.html"><img src="images/car.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Best playlist for Car Driving</h4>
+                    </div>
+                    <div class="card">
+                        <a href="hindi.html"><img src="images/hindi.jpg" alt="Artist 1"></a>
+                        <div class="play">
+                            <span><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <h4>Random Hindi Songs</h4>
+                    </div>      
+                </div>
+                
+            <br><br><br><br>
+            <br><br><br>
+            <div class="company">
+                <ul>
+                    <li><strong>Company</strong></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">For the Record</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Communities</strong></li>
+                    <li><a href="#">For Artists</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Vendors</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Useful Links</strong></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Free Mobile App</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Spotify Plans</strong></li>
+                    <li><a href="#">Premium Individual</a></li>
+                    <li><a href="#">Premium Duo</a></li>
+                    <li><a href="#">Premium Family</a></li>
+                    <li><a href="#">Premium Student</a></li>
+                    <li><a href="#">Spotify Free</a></li>
+                </ul>
+                <div class="social-media">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="legal">
+                <ul>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Safety & Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">© 2024 Spotify AB</a></li>
+                </ul>
+            </div>
+<br><br><br><br><br><br>
+            </div>
+    </div>
+
+<script>
+    const token = "BQAKEi5U3HLWG2aihMl4rGuiK64mwkhjSa10Xb9UcUri9U5wRE4UJCIGZJc_0B80Rs3zQs9xDWmunb_9-N4DslLhsKyiCCkc5cpepYj1LPZ4GTzShxbgYtnOd9V_Q696J5SI4Fap2gJmltDGHo0oKiz-p0GzYsnjPFUb8geQ9Kd_-RiH7UQFOwUprdPaWaMekWRZ5qScNHu7IJmfOQAHsIg8fhDiFHnZ4XmWMXWUgOlSDgpMD8MiIHUqPw-c6mIGLtT9JjSsoiRUcOGAnO4Kot9S7l40aEuESls6s6AC9lVMq5Sb3TpPOXey-qdl3pp5rcU7Kgx9_dkECa3VBVg-hHpRS60sHwEMacg5L34mVKEVJRNHG3kXOh6hCJYuujIYgTQ7nAtaHHvd";
+    
+let playlist = [];
+
+// --- Search Spotify ---
+async function searchSpotify(query) {
+    if (!query.trim()) {
+        document.getElementById("suggestions").innerHTML = "";
+        return [];
+    }
+
+    try {
+        const res = await fetch(
+            `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=10`,
+            { headers: { Authorization: `Bearer ${token}` } }
+        );
+        if (!res.ok) throw new Error("API error");
+        const data = await res.json();
+        return data?.tracks?.items || [];
+    } catch (e) {
+        console.error("Spotify search error", e);
+        return [];
+    }
+}
+
+// --- Render Results ---
+function renderResults(tracks) {
+    const container = document.getElementById("suggestions");
+    container.innerHTML = "";
+
+    tracks.forEach((track) => {
+        const songDiv = document.createElement("div");
+        songDiv.className = "song-item";
+
+        const imgUrl = track.album.images[2]?.url || "https://via.placeholder.com/40?text=No+Image";
+
+        songDiv.innerHTML = `
+            <div class="song-info">
+                <div class="song-text">
+                <img src="${imgUrl}" alt="cover" width="40" height="40" />
+                    <div class="song-name">${track.name}</div>
+                    <div class="song-artist">${track.artists.map(a => a.name).join(", ")}</div>
+                </div>
+            </div>
+        `;
+
+        songDiv.addEventListener("click", () => {
+        addToPlaylist({
+            name: track.name,
+            artist: track.artists.map(a => a.name).join(", "),
+            image: imgUrl
+        });
+        container.innerHTML = "";
+        document.getElementById("searchInput").value = "";
+    });
+
+        container.appendChild(songDiv);
+    });
+
+    if (tracks.length === 0) {
+        container.innerHTML = `<div class="no-results">No tracks found.</div>`;
+    }
+}
+
+// --- Full Screen Detail View ---
+function showFullScreenDetail(track) {
+    const detail = document.createElement("div");
+    detail.className = "full-screen";
+    detail.innerHTML = `
+        <div class="full-content">
+            <button class="close-btn" onclick="this.parentElement.parentElement.remove()">×</button>
+            <img src="${track.album.images[1]?.url}" alt="cover" class="full-img"/>
+            <h2>${track.name}</h2>
+            <h3>${track.artists.map(a => a.name).join(", ")}</h3>
+            <p><strong>Album:</strong> ${track.album.name}</p>
+            <p><strong>Release:</strong> ${track.album.release_date}</p>
+            <audio controls src="${track.preview_url}" style="margin-top: 10px;">
+                Your browser does not support audio playback.
+            </audio>
+        </div>
+    `;
+    document.body.appendChild(detail);
+}
+
+// --- Render Playlist ---
+function renderPlaylist() {
+    const container = document.getElementById("playlist");
+    container.innerHTML = "<h3>Your Playlist:</h3>";
+    if (playlist.length === 0) {
+        container.innerHTML += "<div class='no-results'>No songs added yet.</div>";
+        return;
+    }
+
+    playlist.forEach((song, index) => {
+        const songDiv = document.createElement("div");
+        songDiv.className = "song-item";
+        songDiv.innerHTML = `
+            <div class="song-info">
+                <img src="${song.image}" alt="cover" width="40" height="40" />
+                <div class="song-text">
+                    <div class="song-name">${index + 1}. ${song.name}</div>
+                    <div class="song-artist">${song.artist}</div>
+                </div>
+            </div>
+        `;
+        container.appendChild(songDiv);
+    });
+}
+
+// --- Debounce ---
+let debounceTimeout = null;
+function onSearch(query) {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(async () => {
+        const tracks = await searchSpotify(query);
+        renderResults(tracks);
+    }, 400);
+}
+
+// --- Close Suggestions ---
+function closeSuggestionsOnBlur() {
+    const input = document.getElementById("searchInput");
+    const sugg = document.getElementById("suggestions");
+    let timeout = null;
+
+    input.addEventListener("blur", () => {
+        timeout = setTimeout(() => { sugg.innerHTML = ""; }, 150);
+    });
+    sugg.addEventListener("mousedown", () => clearTimeout(timeout));
+    input.addEventListener("focus", () => {
+        if (input.value) onSearch(input.value);
+    });
+}
+
+// --- Init ---
+document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("searchInput");
+    input.addEventListener("input", (e) => onSearch(e.target.value));
+    closeSuggestionsOnBlur();
+    renderPlaylist();
+});
+</script>
+</body>
+</html>

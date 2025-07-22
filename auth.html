@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+        font-family: Arial;
+        background: #121212;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .auth-box {
+        background: #1e1e1e;
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #1db954;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .toggle {
+        margin-top: 15px;
+        text-align: center;
+        cursor: pointer;
+        color: #1db954;
+    }
+
+    .error {
+        color: #ff4d4d;
+        text-align: center;
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="auth-box" id="authBox">
+  <h2 id="formTitle">Login</h2>
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+  <button onclick="submitForm()">Login</button>
+  <div class="toggle" onclick="toggleForm()">Don't have an account? Sign up</div>
+  <div class="error" id="errorMsg"></div>
+</div>
+
+<script>
+  let isLogin = true;
+
+  function toggleForm() {
+    const title = document.getElementById('formTitle');
+    const button = document.querySelector('button');
+    const toggle = document.querySelector('.toggle');
+    const errorMsg = document.getElementById('errorMsg');
+
+    isLogin = !isLogin;
+    
+    title.textContent = isLogin ? 'Login' : 'Sign Up';
+    button.textContent = isLogin ? 'Login' : 'Sign Up';
+    toggle.textContent = isLogin ? "Don't have an account? Sign up" : "Already have an account? Login";
+    errorMsg.textContent = '';
+  }
+
+  function submitForm() {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const errorMsg = document.getElementById('errorMsg');
+
+    if (!username || !password) {
+      errorMsg.textContent = 'Please fill in all fields.';
+      return;
+    }
+
+    if (isLogin) {
+      // Login logic
+      const savedUser = localStorage.getItem(`user_${username}`);
+      if (!savedUser) {
+        errorMsg.textContent = "User not found. Please sign up first.";
+        return;
+      }
+
+      const savedData = JSON.parse(savedUser);
+      if (savedData.password === password) {
+        errorMsg.style.color = "#1db954";
+        errorMsg.textContent = `Welcome back, ${username}! ✅`;
+        // Redirect to homepage or dashboard after 1s
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000);
+      } else {
+        errorMsg.textContent = "Incorrect password.";
+      }
+
+    } else {
+      // Sign up logic
+      if (localStorage.getItem(`user_${username}`)) {
+        errorMsg.textContent = "User already exists. Please login.";
+        return;
+      }
+
+      localStorage.setItem(`user_${username}`, JSON.stringify({ username, password }));
+      errorMsg.style.color = "#1db954";
+      errorMsg.textContent = "Signed up successfully! You can now log in.";
+      toggleForm();
+    }
+  }
+</script>
+
+</body>
+</html>
